@@ -1,73 +1,113 @@
-body{
-    font-family: "Roboto", sans-serif;
-  font-weight: 100;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
-.section1 {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.text1 {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.653);
-  color: black;
-  margin-left: 150px;
-  padding: 30px;
-  border-radius: 20px;
-}
- h1 {
-  font-size: 48px;
-  color: rgb(25, 52, 101);
-}
- h2 {
-  font-size: 38px;
-  color: rgb(25, 52, 101);
-}
-.text1 p {
-  font-size: 28px;
-}
-.text1 a {
+
+a {
   text-decoration: none;
   background-color: brown;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
 }
-.section2,.section6{
-    background-color: #f9f9f9;
-    text-align: justify;
-    padding: 50px 150px 50px 150px;
-    
+
+.common-section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.section2,.section6 p{
-    font-size: 20px;
+.top-head {
+  padding: 0;
 }
-.section3,.section5{
-    padding: 50px 150px 50px 150px;
-    
+.banner-image {
+  position: relative;
 }
-.text3,.text4,.text5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px;
+.banner-text {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  background-color: rgba(255, 255, 255, 0.53);
+  padding: 30px;
+  border-radius: 20px;
 }
-ul{
-    margin-left: -30px;
-    list-style: none;
-    display: flex;
-   
-}
-li{
-    padding-right: 30px;
-    color: #0056bb;
-}
-li i{
-    padding-right: 5px;
+h2 {
+  font-size: 36px;
 }
 
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+ul {
+  list-style: none;
+  column-count: 2;
+  padding-left: 0;
+}
+
+li i {
+  padding-right: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.common-sec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.custom-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.custom-banner-wraper {
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-banner-wraper .custom-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.custom-banner-content {
+  box-shadow: 0 0 0 0 #fff;
+  background-color: #ffffffa1;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 750px;
+}
+
+.custom-banner-content .banner-heading {
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #193465;
+  font-family: "Roboto", sans-serif;
+}
+.custom-banner-content p {
+  color: #193465;
+}
+@media (min-width: 991px) {
+  .custom-banner-content p {
+    font-size: 25px;
+  }
+}
